@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://plantaselectricashq.com/sitemap.xml

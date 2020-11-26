@@ -18,46 +18,88 @@
 		<link href="css/animate.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 
-		
-
-<!-- TWITTWER -->
-
-
+		<!-- TWITTWER -->
         <meta name="twitter:card" content="summary" />	
         <meta name="twitter:title" content="planta electrica diesel | plantas electricas pequeñas | plantas electricas" >
         <meta name="twitter:description" content="motores diesel, motobombas, motobomba diesel, compresores." >
-        <meta name="twitter:image" content="images/demo/Logo.webp" >
+        <meta name="twitter:image" content="https://plantaselectricashq.com/images/demo/banners.webp" >
         <meta name="twitter:site" content="@Nicolas63783814" >
         <meta name="twitter:creator" content="@Nicolas63783814" >
 
-
-
-<!-- Open Graph  -->
-
-
+		<!-- Open Graph  -->
         <meta property="og:title" content="planta electrica diesel | plantas electricas pequeñas | plantas electricas"/>
         <meta property="og:type" content="article"/>
-        <meta property="og:url" content="https://smith-shoes.com"/>
-        <meta property="og:site_name" content="Planatas HQ"/>
+        <meta property="og:url" content="https://plantaselectricashq.com/"/>
+        <meta property="og:site_name" content="Planatas Electricas HQ"/>
         <meta property="og:image" content="images/demo/Logo.webp"/>
-        <meta property="og:image:alt" content="Plantas HQ"/>	
+        <meta property="og:image:alt" content="Plantas Electricas HQ"/>	
         <meta property="og:description" content="motores diesel, motobombas, motobomba diesel, compresores."/>
 
 
-<!-- INTEGRAR LAS REDES -->
-
+		<!-- INTEGRAR LAS REDES -->
         <script type="application/ld+json">
             {
                 "@context": "http://schema.org",
                 "@type": "Organization",
-                "name": "Plantas HQ",
-                "url": "https://smith-shoes.com/",
-                "address": "",
+                "name": "Plantas Electricas HQ",
+                "url": "https://plantaselectricashq.com/",
+                "address": "Calle 33D # 17A - 19 B/ Floresta vieja",
                 "sameAs": [
                 "https://www.facebook.com/hernanqt"
                 ]
             }
-        </script>
+		</script>
+		
+		<!-- DATOS STRUCTURE -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "organization,
+				"image": [
+					"https://plantaselectricashq.com/images/demo/banners.webp"
+				],
+				"@id": "https://plantaselectricashq.com/1",
+				"name": "Hernan Quietama",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "Calle 33D # 17A - 19 B/ Floresta vieja ",
+					"addressLocality": "Valle del cauca",
+					"postalCode": "760010",
+					"addressCountry": "COL"
+				},
+				"review": {
+					"@type": "Review",
+					"reviewRating": {
+						"@type": "Rating",
+						"ratingValue": "4.3",
+						"bestRating": "5"
+						},
+					"author": {
+						"@type": "Person",
+						"name": "addressCountry"
+					}
+				},
+				"url": "https://plantaselectricashq.com/",
+				"telephone": "+573136442677",
+				"openingHoursSpecification": [
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": [
+							"Monday",
+							"Tuesday",
+							"Wednesday",
+							"Thursday",
+							"Friday",
+							"Saturday",
+							"Monday"
+						],
+						"opens": "8:00",
+						"closes": "20:00"
+					},
+				],
+				"acceptsReservations": "false"
+			}
+		</script>
 
 	</head>
 	<body id="page-top">
@@ -119,6 +161,8 @@
 				</div>
 			</div>
 		</header>
+
+		<!-- NOSOTROS -->
 		<section id="about" class="light-bg">
 			<div class="container">
 				<div class="row">
@@ -331,44 +375,41 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-6" style="padding-top: 2rem;">
 						<div class="section-text">
 							<h4>Nuestra Empresa Oficial</h4>
 							<p>Cali- Valle Del Cauca</p>
 							<p>
-								<i class="fas fa-map-marker"></i> Calle 33D # 17A - 19 B/ Floresta vieja
+								<i class="fas fa-map-marker"></i> Calle 33D # 17A - 19 - Floresta vieja
 							</p>
 							<p>
-								<i class="fa fa-envelope">
-
-								</i> falatael@correo
+								<i class="fa fa-envelope">	</i> info@plantaselectricashq.com
 							</p>
 							<p>
-								<i class="fas fa-phone-alt"></i> <a tel:+0328963045> 896 30 45 -</a>
+								<i class="fas fa-phone-alt"></i> <a href="tel:+0328963045"> 896 30 45 </a> -
 								<a href="https://wa.me/+573136442677" target="_blank"> 313 644 2677 </a>
 							</p>
 						</div>
 					</div>
-					<div class="col-md-3">
-					</div>
+
 					<div class="col-md-6">
-						<form name="sentMessage" id="contactForm" novalidate="">
+						<form action="php/form.php" method="POST">
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Nombre *" id="name" required="" data-validation-required-message="Please enter your name.">
+										<input type="text" class="form-control" placeholder="Nombre *" name="name" required data-validation-required-message="Please enter your name.">
 										<p class="help-block text-danger"></p>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="email" class="form-control" placeholder="Email *" id="email" required="" data-validation-required-message="Por favor ingresa tu direccion de correo.">
+										<input type="email" class="form-control" placeholder="Email *" name="email" required data-validation-required-message="Por favor ingresa tu direccion de correo.">
 										<p class="help-block text-danger"></p>
 									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-12">
 									<div class="form-group">
-										<input type="number" class="form-control" placeholder="Numero *" id="number" required="" data-validation-required-message="Por favor ingresa tu numero.">
+										<input type="number" class="form-control" placeholder="Numero *" name="phone" required data-validation-required-message="Por favor ingresa tu numero.">
 										<p class="help-block text-danger"></p>
 									</div>
 								</div>
@@ -376,7 +417,7 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="form-group">
-										<textarea class="form-control" placeholder="Mensaje*" id="message" required="" data-validation-required-message="Por favor deja tu mensaje."></textarea>
+										<textarea class="form-control" placeholder="Mensaje*" name="msg" required data-validation-required-message="Por favor deja tu mensaje."></textarea>
 										<p class="help-block text-danger"></p>
 									</div>
 								</div>
@@ -384,7 +425,6 @@
 							</div>
 							<div class="row">
 								<div class="col-lg-12 text-center">
-									<div id="success"></div>
 									<button type="submit" class="btn">ENVIAR</button>
 								</div>
 							</div>
@@ -401,9 +441,8 @@
 				<p>Copyright © TODOS LOS DERECHOS RESERVADOS<a href="https://cisde.co/"><span> CISDE</a></p>
 			</div>
 		</footer>
-		<!-- Bootstrap core JavaScript
-			================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
+
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
