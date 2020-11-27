@@ -4,16 +4,26 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $msg = $_POST['msg'];
 
-$to = 'info@plantaselectricashq.com';
+if($name == '' | $phone == '' | $msg == '' | $_POST['email'] == ''){
 
-$subject = 'Mensaje desde pagina web';
-$message = "Nombre: $name"."\nphone: $asunto"."\nMensaje: $msg";
+    echo json_encode ('error');
 
-$headers = "From:".$_POST['email'];
+}   else {
 
-mail($to, $subject, $message, $headers);
+    
+    $to = 'info@plantaselectricashq.com';
 
-header('location:/');
+    $subject = 'Mensaje desde pagina web';
+    $message = "Nombre: $name"."\nTelefono: $phone"."\nMensaje: $msg";
+
+    $headers = "From:".$_POST['email'];
+
+    mail($to, $subject, $message, $headers);
+
+    echo json_encode ('ok');
+
+}
 
 
 ?>
+
