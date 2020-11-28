@@ -11,7 +11,7 @@ if($name == '' | $phone == '' | $msg == '' | $_POST['email'] == ''){
 }   else {
 
     
-    $to = 'info@plantaselectricashq.com';
+    $to = 'alterplantashq@yahoo.com';
 
     $subject = 'Mensaje desde pagina web';
     $message = "Nombre: $name"."\nTelefono: $phone"."\nMensaje: $msg";
