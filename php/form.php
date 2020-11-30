@@ -12,6 +12,7 @@ if($name == '' | $phone == '' | $msg == '' | $_POST['email'] == ''){
 
     
     $to = 'alterplantashq@yahoo.com';
+    // $to = 'nicolaschamorro@cisde.co';
 
     $subject = 'Mensaje desde pagina web';
     $message = "Nombre: $name"."\nTelefono: $phone"."\nMensaje: $msg";
